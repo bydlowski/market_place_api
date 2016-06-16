@@ -5,7 +5,6 @@ require 'spec_helper.rb'
 describe Api::V1::UsersController do
 
   include Devise::TestHelpers
-  before(:each) { request.headers['Accept'] = "application/vnd.marketplace.v1" }
 
   describe "GET #show" do
     before(:each) do
