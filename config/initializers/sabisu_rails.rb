@@ -4,7 +4,7 @@ SabisuRails.setup do |config|
 
   # Base uri for posting the
   # config.base_api_uri = nil
-  config.base_api_uri = 'api.new_market_place_api.dev'
+  config.base_api_uri = 'api.new_market_place_api.dev:3000'
 
   # Ignored attributes for building the forms
   # config.ignored_attributes = %w{ created_at updated_at id }
@@ -23,7 +23,7 @@ SabisuRails.setup do |config|
   # config.layout = "sabisu"
 
   # Resources on the api
-  config.resources = [:users]
+  config.resources = [:users, :products]
 
   # Default resource
   config.default_resource = :users
